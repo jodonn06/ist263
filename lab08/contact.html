@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Contact</title>
+    <link rel="stylesheet" href="styles2.css">
+    <style>
+        .row1,
+        .row2 {
+            display: flex;
+        }
+
+        .row1,
+        .row2 {
+            background-color: #E6D5B8;
+            border: 2px solid #E45826;
+            border-radius: 5px;
+            margin: 30px;
+        }
+
+        .column1a,
+        .column1b {
+            margin: 15px;
+        }
+
+        .column2a,
+        .column2b {
+            margin: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav></nav>
+
+    <h1>Contact</h1>
+
+    <div class="row1">
+        <div class="column1a">
+            <p>Syracuse University<br>
+                900 S Crouse Avenue<br>
+                Syracuse, NY 13244<br>
+            </p>
+        </div>
+        <div class="column1b">
+            <a href="mailto:jodonn06@syr.edu" class="link1">James O'Donnell Email</a><br>
+            <br>
+            <img src="../images/logosized.png" alt="LinkedIn logo">
+            <a href="https://www.linkedin.com/in/jamesodonnell3/" class="link2">My LinkedIn Profile</a><br>
+        </div>
+    </div>
+    <div class="row2">
+        <div class="column2a">
+            <h4>Contact Form</h4>
+            <form action="https://formspree.io/f/mgedkkwd" method="post">
+                <label for="fullname">Full name:</label>
+                <input type="text" name="fullname" id="fullname"><br>
+                <p>Who are you?</p>
+                <label for="student">Student</label>
+                <input type="checkbox" id="student" name="student"><br>
+                <label for="professor">Professor</label>
+                <input type="checkbox" id="professor" name="professor"><br>
+                <label for="employer">Employer</label>
+                <input type="checkbox" id="employer" name="employer"><br>
+                <label for="other">Other</label>
+                <input type="checkbox" id="other" name="other"><br>
+                <label for="contactreason">Reason for contacting me:</label>
+                <textarea name="contactreason" id="contactreason"></textarea><br>
+                <input type="submit" value="Send message">
+            </form>
+        </div>
+        <div class="column2b">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2916.055564421868!2d-76.13914098453785!3d43.04026239986583!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d9f39f4537cd79%3A0x968a90aa98400698!2s900%20S%20Crouse%20Ave%2C%20Syracuse%2C%20NY%2013210!5e0!3m2!1sen!2sus!4v1644510942023!5m2!1sen!2sus"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </div>
+
+
+
+
+
+</body>
+
+</html>
