@@ -19,13 +19,28 @@
             text-align: center;
         }
 
-        .iconrow {display: flex;}
+        .icon {
+            display: flex;
+            flex: 3;
+            justify-content: space-evenly;
+        }
 
-        .other{background-color: #E6D5B8;
-        border: 2px solid #F0A500;
-        border-radius: 5px;}
+        .other {
+            background-color: #E6D5B8;
+            border: 2px solid #F0A500;
+            border-radius: 5px;
+            padding: 10px;
+            flex: 1;
+        }
 
+        .flexbox2 {
+            display: flex;
+        }
 
+        .description,
+        .flexbox2 {
+            padding: 40px;
+        }
     </style>
     <link rel="stylesheet" href="styles2.css">
 </head>
@@ -34,40 +49,46 @@
     <nav></nav>
 
     <h1>Skills</h1>
+    <p class="description">This page shows the variety of technical skills I have been developing over the past few
+        years. Most of these skills were taught and worked on in a classroom setting. Others, like my film and video
+        editing skills, were self taught. I plan on obtaining new skills and continuing to work on the existing skills.
+    </p>
 
-    <div class="iconrow">
-        <div><p>HTML</p><br>
-            <img src="html.png" alt="html icon" width="50">
+    <div class="flexbox2">
+        <div class="icon">
+            <div>
+                <img src="html.png" alt="html icon" width="50"><br>
+                <p>HTML</p>
+            </div>
+            <div>
+                <img src="java.png" alt="java icon" width="50"><br>
+                <p>Java</p>
+            </div>
+            <div>
+                <img src="macOS.png" alt="macOS icon" width="50"><br>
+                <p>macOS</p>
+            </div>
+            <div>
+                <img src="excel.png" alt="excel icon" width="50"><br>
+                <p>Excel</p>
+            </div>
+            <div>
+                <img src="video.png" alt="video icon" width="50"><br>
+                <p>Video</p>
+            </div>
         </div>
-        <div><p>Java</p><br>
-            <img src="java.png" alt="java icon" width="50">
-        </div>
-        <div><p>macOS</p><br>
-            <img src="macOS.png" alt="macOS icon" width="50"></div>
-        <div><p>Excel</p><br>
-            <img src="excel.png" alt="excel icon" width="50">
-        </div>
-        <div><p>Video</p><br>
-            <img src="video.png" alt="video icon" width="50">
+        <div class="other">
+            <aside>
+                <h2>Other Skills</h2>
+                <p>Pyton</p>
+                <p>SQL</p>
+                <p>Windows</p>
+                <p>Statistics/Probability</p>
+            </aside>
         </div>
     </div>
 
-    <aside class="other">
-        <h2>Other Skills</h2>
-        <p>Pyton</p>
-        <p>SQL</p>
-        <p>Windows</p>
-        <p>Statistics/Probability</p>
-    </aside>
-
-    <div class="otherrow">
-        <div></div>
-        <div></div>
-    </div>
-
-    <p>Below shows a variety of my skills seperated by categories. They range from knowledge of coding languages,
-        operating systems, MS Office, math, and videos. My compentancy level for each skill is listed on the right.</p>
-    <table>
+    <!-- <table>
         <caption>Technical Skills</caption>
         <tr>
             <th>Category</th>
@@ -119,7 +140,8 @@
             <td>Filming/editing</td>
             <td>Accomplished</td>
         </tr>
-    </table>
+    </table> -->
+
 </body>
 
 </html>
