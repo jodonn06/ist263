@@ -1,6 +1,9 @@
 body {background-color: #202A44;}
 h1, h2 {color: #FF0000;}
 body {color: #FFFFFF}
-nav {background-color: #FF0000;
+nav {background-color: #8B0000;
     margin: 20px;
+    padding: 10px;
     }
+a:link {color:white;}
+a:visited {color: white}
