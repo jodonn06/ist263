@@ -6,12 +6,29 @@ p {
     color: navy;
 }
 
-form {
-    border: 3px solid navy;
-    color: navy;
-    padding: 10px;
-}
-
 .logo {
     width: 450px;
+}
+
+.indexrow1column2 {
+    font-size: 25px;
+    padding-top: 20px;
+    padding-left: 250px;
+}
+
+#skip {
+    position: absolute;
+    left: -999px;
+    background-color: navy;
+    color: white;
+    padding: 5px;
+}
+
+#skip:focus {
+    left: 515px;
+}
+
+#form {
+    font-size: 20px;
+    line-height: 30px;
 }

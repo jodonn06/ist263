@@ -11,9 +11,7 @@
     <style>
         .indexrow1 {
             display: flex;
-            padding-top: 10px;
-            padding-bottom: 10px;
-            padding-left: 10px;
+            padding: 10px;
         }
 
         .indexrow1column1 {
@@ -29,28 +27,26 @@
         .indexrow2 {
             display: flex;
             justify-content: center;
-            padding-top: 10px;
-            padding-bottom: 10px;
+            padding: 10px;
         }
 
         .indexrow3 {
             display: flex;
             justify-content: center;
-            padding-top: 10px;
-            padding-bottom: 10px;
+            padding: 10px;
         }
 
         .indexrow4 {
             display: flex;
             justify-content: center;
-            padding-top: 10px;
-            padding-bottom: 10px;
+            padding: 10px;
         }
 
-        .form {
-            border: 3px solid navy;
+        .indexrow5 {
+            display: flex;
+            justify-content: center;
             color: navy;
-            padding: 10px;
+            padding-bottom: 10px;
         }
     </style>
 </head>
@@ -61,44 +57,52 @@
             <header><img class="logo" src="logo.png" alt="In The Works Logo"></header>
         </div>
         <div class="indexrow1column2">
-            <nav>
-                <a href="index.html">Home</a> |
-                <a href="about.html">About</a> |
-                <a href="portfolio.html">Portfolio</a>
-            </nav>
+            <a href="#content" id="skip">Skip to Content</a>
+            <a href="index.html">Home</a> |
+            <a href="about.html">About</a> |
+            <a href="portfolio.html">Portfolio</a>
         </div>
     </div>
 
     <div class="indexrow2">
-        <iframe class="bestvideo" width="740" height="416" src="https://www.youtube.com/embed/WpN3QYR-vOM"
-            title="YouTube video player" frameborder="0"
+        <iframe class="featurevideo" width="956.6" height="522" src="https://www.youtube.com/embed/TezGYzxRTNg" title="YouTube video player"
+            frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen>
-        </iframe>
+            allowfullscreen></iframe>
     </div>
 
     <div class="indexrow3">
-        <h2 class="companysligan">*Company slogan/saying TBD*</h2>
+        <h2 class="companyslogan">"You will be blown away by their quality of work"</h2>
     </div>
+
+    <hr>
 
     <div class="indexrow4">
-        <div><h2>Contact Form</h2></div>
-        <div><form class="form" action="https://formspree.io/f/mlezpdye" method="post">
-            <label for="fullname">Full name:</label>
-            <input type="text" name="fullname" id="fullname"><br>
-            <label for="email">Email:</label>
-            <input type="text" name="email" id="email"><br>
-            <label for="videotype">Video type:</label>
-            <input type="text" name="videotype" id="videotype"><br>
-            <label for="date">Date needed:</label>
-            <input type="date" name="date" id="date"><br>
-            <label for="details">Details:</label>
-            <textarea name="details" id="details"></textarea><br>
-            <input type="submit" value="Send message">
-        </form></div>
+        <div>
+            <h2>Contact Form</h2>
+        </div>
     </div>
 
-    
+
+    <div class="indexrow5">
+        <div>
+            <form id="form" action="https://formspree.io/f/mlezpdye" method="post">
+                <label for="fullname">Full name:</label>
+                <input type="text" name="fullname" id="fullname"><br>
+                <label for="email">Email:</label>
+                <input type="text" name="email" id="email"><br>
+                <label for="videotype">Video type:</label>
+                <input type="text" name="videotype" id="videotype"><br>
+                <label for="date">Date needed:</label>
+                <input type="date" name="date" id="date"><br>
+                <label for="details">Details:</label>
+                <textarea name="details" id="details"></textarea><br>
+                <input type="submit" value="Send message">
+            </form>
+        </div>
+    </div>
+
+
 
 
     <footer>
