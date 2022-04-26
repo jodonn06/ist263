@@ -5,41 +5,101 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="project.css">
     <title>Home</title>
+
+    <style>
+        .indexrow1 {
+            display: flex;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+        }
+
+        .indexrow1column1 {
+            display: flex;
+            justify-content: flex-start;
+        }
+
+        .indexrow1column2 {
+            display: flex;
+            justify-content: center;
+        }
+
+        .indexrow2 {
+            display: flex;
+            justify-content: center;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+
+        .indexrow3 {
+            display: flex;
+            justify-content: center;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+
+        .indexrow4 {
+            display: flex;
+            justify-content: center;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+
+        .form {
+            border: 3px solid navy;
+            color: navy;
+            padding: 10px;
+        }
+    </style>
 </head>
 
 <body>
-    <header><img class="logo" src="logo.png" alt="In The Works Logo"></header>
+    <div class="indexrow1">
+        <div class="indexrow1column1">
+            <header><img class="logo" src="logo.png" alt="In The Works Logo"></header>
+        </div>
+        <div class="indexrow1column2">
+            <nav>
+                <a href="index.html">Home</a> |
+                <a href="about.html">About</a> |
+                <a href="portfolio.html">Portfolio</a>
+            </nav>
+        </div>
+    </div>
 
-    <nav>
-        <nav>
-            <a href="index.html">Home</a> |
-            <a href="about.html">About</a> |
-            <a href="portfolio.html">Portfolio</a>
-        </nav>
-    </nav>
+    <div class="indexrow2">
+        <iframe class="bestvideo" width="740" height="416" src="https://www.youtube.com/embed/WpN3QYR-vOM"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+        </iframe>
+    </div>
 
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/WpN3QYR-vOM" title="YouTube video player"
-        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen>
-    </iframe>
+    <div class="indexrow3">
+        <h2 class="companysligan">*Company slogan/saying TBD*</h2>
+    </div>
 
-    <h2>*Company slogan/saying TBD*</h2>
+    <div class="indexrow4">
+        <div><h2>Contact Form</h2></div>
+        <div><form class="form" action="https://formspree.io/f/mlezpdye" method="post">
+            <label for="fullname">Full name:</label>
+            <input type="text" name="fullname" id="fullname"><br>
+            <label for="email">Email:</label>
+            <input type="text" name="email" id="email"><br>
+            <label for="videotype">Video type:</label>
+            <input type="text" name="videotype" id="videotype"><br>
+            <label for="date">Date needed:</label>
+            <input type="date" name="date" id="date"><br>
+            <label for="details">Details:</label>
+            <textarea name="details" id="details"></textarea><br>
+            <input type="submit" value="Send message">
+        </form></div>
+    </div>
 
-    <h3>Contact Form</h3>
-    <form action="https://formspree.io/f/mlezpdye" method="post">
-        <label for="fullname">Full name:</label>
-        <input type="text" name="fullname" id="fullname"><br>
-        <label for="email">Email:</label>
-        <input type="text" name="email" id="email"><br>
-        <label for="videotype">Video type:</label>
-        <input type="text" name="videotype" id="videotype"><br>
-        <label for="date">Date needed:</label>
-        <input type="date" name="date" id="date"><br>
-        <label for="details">Details:</label>
-        <textarea name="details" id="details"></textarea><br>
-        <input type="submit" value="Send message">
-    </form>
+    
+
 
     <footer>
         <hr>

@@ -1,0 +1,17 @@
+h2,h3 {
+    color: navy;
+}
+
+p {
+    color: navy;
+}
+
+form {
+    border: 3px solid navy;
+    color: navy;
+    padding: 10px;
+}
+
+.logo {
+    width: 450px;
+}

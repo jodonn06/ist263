@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P13</title>
+    <script>
+
+        document.getElementById("correct").onclick = correctAnswer;   
+
+        function correctAnswer () {
+            document.getElementById("correct").style.color = "green";
+        }
+    </script>
+</head>
+
+<body>
+    <p>Java and JavaScript are the same.</p>
+    <p id="incorrect" onclick="incorrectAnswer();">True</p>
+    <p id="correct" onclick="correctAnswer();">False</p>
+</body>
+
+</html>
